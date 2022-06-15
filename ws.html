@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DSC Web Development</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Open+Sans+Condensed:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <meta />
+  </head>
+  <body>
+    <header>
+      <!--Encabezado/Header. Incluye logo y barra de navegación // Elegir tema (Opciones Día/Noche e Inglés/Español)-->
+      
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="images/logo.png" alt="DSC logo" />
+        <a class="navbar-brand" href="#">DSC Web Development</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+
+
+    </header>
+    <div class="clearfix"></div>
+
+    <main>
+      <!--TITULO PPAL-->
+      <a name="home"></a>
+      <div id="title">
+        <h1>Daniela Sol Ceballos</h1>
+        <h2>Web Developer</h2>
+        <h3>Argentinian living in Berlin</h3>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <!-- Breve bio + img ppal + servicios  // descargar CV en PDF-->
+
+      <div class="box">
+        <div class="boxOne">
+          <h4>Biography</h4>
+          <p>
+            Hi! I'm a former foreign trade employee. Living in Berlin I discover
+            a new version of myself. I started web Development as a hobby during
+            the pandemy, and suddenly I was finishing course after course and
+            realizing that I loved it! So I'm in constant training and more than
+            happy to start a career in this area!
+          </p>
+        </div>
+        <div class="boxTwo">
+          <img
+            id="mainImg"
+            src="images/skills/Illustracion.png"
+            alt="main img"
+          />
+        </div>
+        <div class="boxThree">
+          <h4>Services</h4>
+          <p>
+            I am a freelance worker. I have experience in different
+            technologies, such as JS, bootstrap, MySql, NodeJS, and more... I
+            invite you to look at my <a href="#skills">Skills</a> and
+            <a href="#portfolio">Portfolio</a> sections.
+          </p>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <!--Sección de Skills-->
+
+      <hr />
+      <a name="skills"></a>
+      <h3 class="subtitle">Skills</h3>
+      <img src="images/skills/html.png" alt="HTML" />
+      <img src="images/skills/css.png" alt="CSS" />
+      <img src="images/skills/javascript.png" alt="JS" />
+      <img src="images/skills/boostrap.png" alt="Bootstrap" />
+      <img src="images/skills/react.png" alt="REACT" />
+      <img src="images/skills/node.png" alt="NODE JS" />
+      <img src="images/skills/mysql.png" alt="MYSQL" />
+
+      <div class="clearfix"></div>
+
+      <!--Sección de Portfolio-->
+
+      <hr />
+
+    <section class="colored-section" id="testimonials">
+      <h3 class="subtitle">Portfolio</h3>
+
+      <div class="row justify-content-center">
+        <div class="col-sm-8"></div>
+    
+
+      <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active container-fluid">
+            <img class="testimonial-image" src="images/portfolio/BMI.png" alt="BMI">
+          </div>
+
+          <div class="carousel-item container-fluid">
+            <img class="testimonial-image" src="images/portfolio/diceeChallange.png" alt="DICEE">
+          </div>
+
+          <div class="carousel-item container-fluid">
+            <img class="testimonial-image" src="images/portfolio/DrumKit.png" alt="DRUM">
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+  
+    </section>
+  </div>
+    
+      <div class="clearfix"></div>
+
+      <!--Formulario de contacto-->
+
+      <hr />
+      <a name="contact"></a>
+      <h3 class="subtitle">Contact</h3>
+      <form id="form-contacto">
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="Insert your name"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName" placeholder="Insert your last name"><br>
+        <label for="email">Email address: </label><br>
+        <input type="email" name="email" placeholder="Insert your email address"><br>
+        <label for="message">Message: </label><br>
+        <textarea name="comment" form="usrform" placeholder="Insert your message here"></textarea><br>
+      
+        
+        <input type="submit" value="Submit">
+      </form>
+
+
+      
+
+      <div class="clearfix"></div>
+    </main>
+
+    <!--Pie de página. Contacto en redes.-->
+
+    <footer id="footer">
+      <p>You can also check my profiles:</p>
+      <a
+        href="https://www.linkedin.com/in/daniela-sol-ceballos-00ab0565/?locale=en_US"
+        target="_blank"
+        ><img src="images/footer/linkedin.png" alt="Linkedin"
+      /></a>
+      <a href="https://github.com/danysol25" target="_blank"><img class="img-size" src="images/footer/GitHub.svg" alt="GitHub"
+      /></a>
+      <a href="#contact"
+        ><img src="images/footer/mail.png" alt="Contact form"
+      /></a>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
