@@ -29,7 +29,7 @@
       
       <nav class="navbar navbar-expand-lg navbar-light">
         <img src="images/logo.png" alt="DSC logo" />
-        <a class="navbar-brand" href="#">DSC Web Development</a>
+        <h2>DSC Web Development</h2>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,7 +42,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse menu" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
@@ -66,20 +66,19 @@
 
     <main>
       <!--TITULO PPAL-->
-      <a name="home"></a>
       <div id="title">
         <h1>Daniela Sol Ceballos</h1>
-        <h2>Web Developer</h2>
-        <h3>Argentinian living in Berlin</h3>
+        <h2 class="subtitle">Frontend Developer</h2>
+        <h2>Argentinian living in Berlin</h2>
       </div>
 
       <div class="clearfix"></div>
 
       <!-- Breve bio + img ppal + servicios  // descargar CV en PDF-->
 
-      <div class="box">
+      <div class="flex">
         <div class="boxOne">
-          <h4>Biography</h4>
+          <h4>About me</h4>
           <p>
             Hi! I'm a former foreign trade employee. Living in Berlin I discover
             a new version of myself. I started web Development as a hobby during
@@ -87,6 +86,9 @@
             realizing that I loved it! So I'm in constant training and more than
             happy to start a career in this area!
           </p>
+          <br>
+          <h4>Contact</h4>
+          <p>You can contact me by completing the form in<a href="#contact">contact</a> section.</p>
         </div>
         <div class="boxTwo">
           <img
@@ -100,8 +102,7 @@
           <p>
             I am a freelance worker. I have experience in different
             technologies, such as JS, bootstrap, MySql, NodeJS, and more... I
-            invite you to look at my <a href="#skills">Skills</a> and
-            <a href="#portfolio">Portfolio</a> sections.
+            invite you to look at my<a href="#skills">Skills</a> and<a href="#portfolio">Portfolio</a> sections.
           </p>
         </div>
       </div>
@@ -110,7 +111,7 @@
 
       <!--Sección de Skills-->
 
-      <hr />
+      <hr class="section-division"/>
       <a name="skills"></a>
       <h3 class="subtitle">Skills</h3>
       <img src="images/skills/html.png" alt="HTML" />
@@ -125,7 +126,7 @@
 
       <!--Sección de Portfolio-->
 
-      <hr />
+      <hr class="section-division"/>
 
     <section class="colored-section" id="testimonials">
       <h3 class="subtitle">Portfolio</h3>
@@ -167,21 +168,22 @@
 
       <!--Formulario de contacto-->
 
-      <hr />
+      <hr class="section-division"/>
+
       <a name="contact"></a>
       <h3 class="subtitle">Contact</h3>
-      <form id="form-contacto">
+      <form action="enviar.php" method="post" id="form-contacto">
         <label for="firstName">First name:</label><br>
-        <input type="text" id="firstName" name="firstName" placeholder="Insert your name"><br>
+        <input type="text" id="firstName" name="firstName" placeholder="Insert your name" required><br>
         <label for="lastName">Last name:</label><br>
-        <input type="text" id="lastName" name="lastName" placeholder="Insert your last name"><br>
+        <input type="text" id="lastName" name="lastName" placeholder="Insert your last name" required><br>
         <label for="email">Email address: </label><br>
-        <input type="email" name="email" placeholder="Insert your email address"><br>
-        <label for="message">Message: </label><br>
+        <input type="email" name="email" placeholder="Insert your email address" required><br>
+        <label class="message" for="message">Message: </label><br>
         <textarea name="comment" form="usrform" placeholder="Insert your message here"></textarea><br>
       
         
-        <input type="submit" value="Submit">
+        <input id="btn-send" class="send" type="submit" value="Submit">
       </form>
 
 
@@ -201,7 +203,7 @@
       /></a>
       <a href="https://github.com/danysol25" target="_blank"><img class="img-size" src="images/footer/GitHub.svg" alt="GitHub"
       /></a>
-      <a href="#contact"
+      <a href="mailto:dceballos.dsc@gmail.com"
         ><img src="images/footer/mail.png" alt="Contact form"
       /></a>
     </footer>
